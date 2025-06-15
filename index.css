@@ -3,6 +3,27 @@
   display: flex;
 }
 
-.search {
+/* .search {
   flex: 1;
+} */
+
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container > li {
+    flex: 1 1 50%;
+  }
+  .search > input {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .container > li {
+    flex: 1 1 100%;
+  }
+  .search {
+    order: 1;
+  }
 }
