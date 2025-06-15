@@ -28,11 +28,12 @@ body {
 .container > div:nth-child(3) {
   background-color: #88d8b0;
 }
+
 .container {
   border: 5px solid #ffcc5c;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: flex-end;
-  justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.container > div {
+  width: 300px;
 }
